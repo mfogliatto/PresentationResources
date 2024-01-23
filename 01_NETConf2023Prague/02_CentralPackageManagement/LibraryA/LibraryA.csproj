@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Polly" />
+    <!--to override the version defined in Directory.Packages.Props-->
+    <!--<PackageReference Include="Newtonsoft.Json" VersionOverride="13.0.3"/>-->
+  </ItemGroup>
+
+</Project>

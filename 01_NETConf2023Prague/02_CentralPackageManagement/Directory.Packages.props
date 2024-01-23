@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!--for transitive packages to use a centralized version-->
+    <!--<CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>-->
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageVersion Include="Polly" Version="8.1.0" />
+    <!--only applicable when transitive pinning is enabled-->
+    <!--<PackageVersion Include="Polly.Core" Version="8.2.0" />-->
+  </ItemGroup>
+</Project>
