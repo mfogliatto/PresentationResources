@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <!--To fail the build if desired-->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <!--To suppress the warning-->
+    <!--<PackageReference Include="Newtonsoft.Json" Version="13.0.3" NoWarn="RT0003" />--> 
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReferenceTrimmer" Version="3.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryB\LibraryB.csproj" />
+    <!--To suppress the warning-->
+    <!--<ProjectReference Include="..\LibraryB\LibraryB.csproj" NoWarn="RT0002"/>-->
+  </ItemGroup>
+
+</Project>
