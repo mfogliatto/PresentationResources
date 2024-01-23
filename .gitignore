@@ -1,4 +1,5 @@
 .vs
+globalPackagesFolder
 # merge original file(s)
 *.orig
 
